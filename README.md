@@ -20,6 +20,8 @@ Apply migrations and run:
 
 Connection string is in `appsettings.Development.json` and points at the local container above.
 
+Added seed data so when dotnet run --project PathCache.Api is run then 40 fresh records will be inserted into the db.
+
 ## Status
 
 Data layer and migrations in place. Endpoints in progress.
