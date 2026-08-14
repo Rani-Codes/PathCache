@@ -28,3 +28,5 @@ app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
 app.MapPathEndpoints();
 
 app.Run();
+
+public partial class Program;
