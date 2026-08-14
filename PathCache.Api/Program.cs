@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PathCache.Api.Data;
+using PathCache.Api.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,5 +21,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
+app.MapPathEndpoints();
 
 app.Run();
