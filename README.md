@@ -40,6 +40,10 @@ Connection string is in `appsettings.Development.json` and points at the local c
 
     {"errors":{"Source":["Source is required."]}}
 
+## Performance
+
+Cached `?source=X&target=Y` lookups return in ~2-3ms locally (10 runs via `curl -w "%{time_total}"`, first request excluded as a cold-start outlier). Measured on localhost against a local Postgres container, not a production network path.
+
 ## Running Tests
 
     dotnet test
