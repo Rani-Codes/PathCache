@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PathCache.Api/PathCache.Api.csproj" />
+  <Project Path="PathCache.Tests/PathCache.Tests.csproj" />
+</Solution>
